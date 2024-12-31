@@ -4,12 +4,20 @@
 
 #include "esp_system.h"
 #include "nvs_flash.h"
+#include "esp_wifi.h"
 
 
 void app_main(void) {
 
     // NVS をぶち消す
     nvs_flash_init();
+
+    // Network Interface を初期化
+    esp_netif_init();
+
+    // Wi-Fi を開始
+    esp_event_loop_create_default();
+
 
     printf("Hello world!\n");
 

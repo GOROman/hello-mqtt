@@ -32,3 +32,5 @@
 *.app
 build
 sdkconfig
+dependencies.lock
+sdkconfig.old

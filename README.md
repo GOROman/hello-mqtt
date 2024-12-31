@@ -42,7 +42,9 @@ Macだとこの辺のGUIがある。
 idf.py menuconfig
 ~~~
 
-menuconfig で WifiのSSID と PASSWORD を設定
+menuconfig で Wifi の SSID と PASSWORD を設定
+
+![alt text](docs/image.png)
 
 ソースコード内の```BROKER_URI``` と ```FEED``` を適当に書き換えてください。
 
@@ -55,4 +57,8 @@ idf.py build
 ~~~
 idf.py flash monitor
 ~~~
+
+## リファレンス
+
+- ESP-MQTT ( https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/protocols/mqtt.html )
 
